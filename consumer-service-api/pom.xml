@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example.ftgo</groupId>
+        <artifactId>ftgo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <artifactId>consumer-service-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>consumer-service-api</name>
+    <description>consumer-service-api</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.example.ftgo</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.eventuate.tram.sagas</groupId>
+            <artifactId>eventuate-tram-sagas-participant</artifactId>
+            <version>${eventuateTramSagasVersion}</version>
+        </dependency>
+    </dependencies>
+</project>

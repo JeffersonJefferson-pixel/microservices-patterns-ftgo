@@ -8,8 +8,8 @@
 		<version>3.3.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>microservices-patterns-ftgo</artifactId>
+	<groupId>com.example.ftgo</groupId>
+	<artifactId>ftgo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-patterns-ftgo</name>
 	<description>microservices-patterns-ftgo</description>
@@ -31,44 +31,16 @@
 		<eventuateTramSagasVersion>0.23.0.RELEASE</eventuateTramSagasVersion>
 		<eventuateTramCoreVersion>0.34.0.RELEASE</eventuateTramCoreVersion>
 	</properties>
+
+	<modules>
+		<module>common</module>
+		<module>order-service</module>
+		<module>order-service-api</module>
+	</modules>
+
+	<packaging>pom</packaging>
+
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>io.eventuate.tram.sagas</groupId>
-			<artifactId>eventuate-tram-sagas-spring-orchestration-simple-dsl</artifactId>
-			<version>${eventuateTramSagasVersion}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.eventuate.tram.sagas</groupId>
-			<artifactId>eventuate-tram-sagas-orchestration</artifactId>
-			<version>${eventuateTramSagasVersion}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.eventuate.tram.sagas</groupId>
-			<artifactId>eventuate-tram-sagas-participant</artifactId>
-			<version>${eventuateTramSagasVersion}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
