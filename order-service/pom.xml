@@ -48,6 +48,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>io.eventuate.tram.sagas</groupId>
 			<artifactId>eventuate-tram-sagas-spring-orchestration-simple-dsl</artifactId>
 			<version>${eventuateTramSagasVersion}</version>
@@ -65,10 +71,11 @@
 			<version>${eventuateTramSagasVersion}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.eventuate.tram.core/eventuate-tram-aggregate-domain-events -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>io.eventuate.tram.core</groupId>
+			<artifactId>eventuate-tram-aggregate-domain-events</artifactId>
+			<version>${eventuateTramCoreVersion}</version>
 		</dependency>
 	</dependencies>
 

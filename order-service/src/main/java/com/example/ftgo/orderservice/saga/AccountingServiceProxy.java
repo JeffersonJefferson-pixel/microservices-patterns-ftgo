@@ -1,7 +1,7 @@
 package com.example.ftgo.orderservice.saga;
 
 import com.example.ftgo.accountingservice.api.AccountingServiceChannels;
-import com.example.ftgo.accountingservice.api.AuthorizeCommand;
+import com.example.ftgo.accountingservice.api.command.AuthorizeCommand;
 import io.eventuate.tram.commands.common.Success;
 import io.eventuate.tram.sagas.simpledsl.CommandEndpoint;
 import io.eventuate.tram.sagas.simpledsl.CommandEndpointBuilder;

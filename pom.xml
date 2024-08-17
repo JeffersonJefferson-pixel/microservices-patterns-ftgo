@@ -13,19 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-patterns-ftgo</name>
 	<description>microservices-patterns-ftgo</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
 	<properties>
 		<java.version>17</java.version>
 		<eventuateTramSagasVersion>0.23.0.RELEASE</eventuateTramSagasVersion>
@@ -36,6 +23,11 @@
 		<module>common</module>
 		<module>order-service</module>
 		<module>order-service-api</module>
+		<module>consumer-service-api</module>
+		<module>kitchen-service</module>
+		<module>kitchen-service-api</module>
+		<module>accounting-service-api</module>
+		<module>restaurant-service-api</module>
 	</modules>
 
 	<packaging>pom</packaging>

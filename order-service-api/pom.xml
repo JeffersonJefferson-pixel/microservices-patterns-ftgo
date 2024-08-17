@@ -18,5 +18,17 @@
 			<artifactId>common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.eventuate.tram.core/eventuate-tram-events -->
+		<dependency>
+			<groupId>io.eventuate.tram.core</groupId>
+			<artifactId>eventuate-tram-events</artifactId>
+			<version>${eventuateTramCoreVersion}</version>
+		</dependency>
 	</dependencies>
 </project>
